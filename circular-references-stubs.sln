@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Apple.Stubs", "Parent.Stubs\Apple.Stubs.sqlproj", "{507E0778-5900-4DC8-B3B9-1D772A3E4CA8}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Banana", "Banana\Banana.sqlproj", "{43BC7B5D-A28C-489D-98DC-02B2C4614ADA}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Apple", "Apple\Apple.sqlproj", "{818DCDCE-9B68-4D1E-9BC9-69E3F2723BE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{818DCDCE-9B68-4D1E-9BC9-69E3F2723BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{818DCDCE-9B68-4D1E-9BC9-69E3F2723BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{818DCDCE-9B68-4D1E-9BC9-69E3F2723BE9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{818DCDCE-9B68-4D1E-9BC9-69E3F2723BE9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{818DCDCE-9B68-4D1E-9BC9-69E3F2723BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{818DCDCE-9B68-4D1E-9BC9-69E3F2723BE9}.Release|x64.ActiveCfg = Release|Any CPU
+		{818DCDCE-9B68-4D1E-9BC9-69E3F2723BE9}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

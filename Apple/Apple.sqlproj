@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build">
+  <Sdk Name="Microsoft.Build.Sql" Version="2.0.0" />
+  <PropertyGroup>
+    <Name>Dispatcher</Name>
+    <ProjectGuid>{818DCDCE-9B68-4D1E-9BC9-69E3F2723BE9}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <ModelCollation>1033, CI</ModelCollation>
+  </PropertyGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="Banana">
+      <Value>$(SqlCmdVar__19)</Value>
+      <DefaultValue>Banana</DefaultValue>
+    </SqlCmdVariable>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Adding a same-database reference makes no difference -->
+    <!-- <ProjectReference Include="..\Apple.Stubs\Apple.Stubs.sqlproj">
+      <Name>Apple.Stubs</Name>
+      <Project>{507E0778-5900-4DC8-B3B9-1D772A3E4CA8}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+    </ProjectReference> -->
+    <ProjectReference Include="..\Banana\Banana.sqlproj">
+      <Name>Banana</Name>
+      <Project>{43BC7B5D-A28C-489D-98DC-02B2C4614ADA}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>Banana</DatabaseSqlCmdVariable>
+    </ProjectReference>
+  </ItemGroup>
+  <Target Name="BeforeBuild">
+    <Delete Files="$(BaseIntermediateOutputPath)\project.assets.json" />
+  </Target>
+</Project>

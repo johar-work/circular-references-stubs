@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build">
+  <Sdk Name="Microsoft.Build.Sql" Version="2.0.0" />
+  <PropertyGroup>
+    <Name>Tools</Name>
+    <ProjectGuid>{43BC7B5D-A28C-489D-98DC-02B2C4614ADA}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <ModelCollation>1033, CI</ModelCollation>
+  </PropertyGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="Apple">
+      <Value>$(SqlCmdVar__2)</Value>
+      <DefaultValue>Apple</DefaultValue>
+    </SqlCmdVariable>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Apple.Stubs\Apple.Stubs.sqlproj">
+      <Name>Apple.Stubs</Name>
+      <Project>{507E0778-5900-4DC8-B3B9-1D772A3E4CA8}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>Apple</DatabaseSqlCmdVariable>
+    </ProjectReference>
+  </ItemGroup>
+  <Target Name="BeforeBuild">
+    <Delete Files="$(BaseIntermediateOutputPath)\project.assets.json" />
+  </Target>
+</Project>
