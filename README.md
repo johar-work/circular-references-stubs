@@ -10,7 +10,7 @@ Circular references become problematic when databases are placed under version c
 
 ## Proposed solution (and its issue)
 
-A common workaround is to create and maintain stub projects that declare only the objects needed to break the dependency cycle. This repository shows a case where that approach currently fails:
+A common workaround is to create and maintain stub projects that declare only the objects needed to break the dependency cycle. It is often recommended to only define the "shape" of the required object, so that the created stub have no dependencies in turn. This repository shows a case where that approach currently fails:
 
 - Apple.Stubs.sqlproj builds successfully.
 - Banana.sqlproj builds successfully.
@@ -26,3 +26,4 @@ References:
 - https://www.sqlservercentral.com/articles/two-approaches-to-addressing-circular-references-in-ssdt
 - https://web.archive.org/web/20220527001729/https://blogs.solidq.com/en/sqlserver/ssdt-how-to-solve-the-circular-references-issue/
 - https://www.red-gate.com/hub/product-learning/flyway/dealing-with-mutually-dependent-databases-in-flyway
+
