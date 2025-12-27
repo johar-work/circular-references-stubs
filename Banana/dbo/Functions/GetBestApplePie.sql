@@ -6,7 +6,7 @@ BEGIN
 	(
 		SELECT TOP(1)
 			AP.Name 
-		FROM [$(Apple)].dbo.Pie AP
+		FROM [$(Citrus)].dbo.Pie AP
 		ORDER BY
 			AP.Rank DESC
 	);

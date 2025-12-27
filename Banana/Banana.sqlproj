@@ -8,18 +8,18 @@
     <ModelCollation>1033, CI</ModelCollation>
   </PropertyGroup>
   <ItemGroup>
-    <SqlCmdVariable Include="Apple">
+    <SqlCmdVariable Include="Citrus">
       <Value>$(SqlCmdVar__2)</Value>
-      <DefaultValue>Apple</DefaultValue>
+      <DefaultValue>Citrus</DefaultValue>
     </SqlCmdVariable>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Apple.Stubs\Apple.Stubs.sqlproj">
-      <Name>Apple.Stubs</Name>
+    <ProjectReference Include="..\Citrus\Citrus.sqlproj">
+      <Name>Citrus</Name>
       <Project>{507E0778-5900-4DC8-B3B9-1D772A3E4CA8}</Project>
       <Private>True</Private>
       <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
-      <DatabaseSqlCmdVariable>Apple</DatabaseSqlCmdVariable>
+      <DatabaseSqlCmdVariable>Citrus</DatabaseSqlCmdVariable>
     </ProjectReference>
   </ItemGroup>
   <Target Name="BeforeBuild">
