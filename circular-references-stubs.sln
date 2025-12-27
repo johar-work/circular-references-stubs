@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Apple.Stubs", "Parent.Stubs\Apple.Stubs.sqlproj", "{507E0778-5900-4DC8-B3B9-1D772A3E4CA8}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Apple.Stubs", "Apple.Stubs\Apple.Stubs.sqlproj", "{507E0778-5900-4DC8-B3B9-1D772A3E4CA8}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Banana", "Banana\Banana.sqlproj", "{43BC7B5D-A28C-489D-98DC-02B2C4614ADA}"
 EndProject
