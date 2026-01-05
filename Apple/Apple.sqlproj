@@ -14,13 +14,13 @@
     </SqlCmdVariable>
   </ItemGroup>
   <ItemGroup>
-    <!-- Adding a same-database reference makes no difference -->
-    <!-- <ProjectReference Include="..\Apple.Stubs\Apple.Stubs.sqlproj">
+    <ProjectReference Include="..\Apple.Stubs\Apple.Stubs.sqlproj">
       <Name>Apple.Stubs</Name>
       <Project>{507E0778-5900-4DC8-B3B9-1D772A3E4CA8}</Project>
       <Private>True</Private>
       <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
-    </ProjectReference> -->
+      <DatabaseSqlCmdVariable>Apple</DatabaseSqlCmdVariable>
+    </ProjectReference>
     <ProjectReference Include="..\Banana\Banana.sqlproj">
       <Name>Banana</Name>
       <Project>{43BC7B5D-A28C-489D-98DC-02B2C4614ADA}</Project>
